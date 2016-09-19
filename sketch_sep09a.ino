@@ -41,7 +41,7 @@ void loop() {
     double m = (-vE + vD);
     Serial.print(m);
     Serial.print(" - ");
-    controlaMotor(pinMotE1, pinMotE2, -m); //move pra esquerda
+    controlaMotor(pinMotE1, pinMotE2, -m); // move pra esquerda
     Serial.print(" - ");
     controlaMotor(pinMotD1, pinMotD2, m); // move pra direita
     Serial.println(".");
