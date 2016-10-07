@@ -37,7 +37,7 @@ void loop() {
         Serial.print(" - ");
     Serial.print(vD);
     Serial.print(" - ");
-    
+
     double m = (-vE + vD);
     Serial.print(m);
     Serial.print(" - ");
@@ -45,7 +45,7 @@ void loop() {
     Serial.print(" - ");
     controlaMotor(pinMotD1, pinMotD2, m); // move pra direita
     Serial.println(".");
-    }}  
+    }}
 void controlaMotor(int pin1, int pin2, double valor) {
   valor = map(valor, -1024, 1024, -512, 512);
   double velocFinal = velocMax + valor;
