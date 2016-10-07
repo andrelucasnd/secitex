@@ -26,7 +26,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  int distanciaSensor = 13;//Pegar o valor do ultrasonco
+  int distanciaSensor = 13;//Pegar o valor do ultrassônico
   if (distanciaSensor < 7) {
 
   } else {
